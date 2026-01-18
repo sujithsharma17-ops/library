@@ -1,0 +1,141 @@
+/* Color Palette: Rose Background & Green Highlights */
+:root {
+    --rose-light: #fff0f3;  
+    --rose-accent: #ffccd5; 
+    --green-forest: #2e7d32; 
+    --green-leaf: #4caf50;   
+    --dark-text: #2c3e50;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--rose-light);
+    color: var(--dark-text);
+}
+
+/* Navigation - Adjusted for Large Logo */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: white;
+    border-bottom: 5px solid var(--green-forest);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo Sized to ~3cm (115px) */
+.lib-logo {
+    height: 115px; 
+    width: 115px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--green-forest);
+}
+
+.founder {
+    font-size: 1rem;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+/* Search Bar */
+#searchInput {
+    padding: 12px 20px;
+    border: 2px solid var(--rose-accent);
+    border-radius: 25px;
+    width: 250px;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: var(--green-forest);
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    margin: 30px 5%;
+    border-radius: 20px;
+    border: 1px solid var(--rose-accent);
+}
+
+.organized-by {
+    color: var(--green-forest);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Book Grid Layout */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 40px 5%;
+}
+
+.book-card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid var(--rose-accent);
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--green-forest);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.book-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.read-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: var(--green-forest);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.read-btn:hover {
+    background-color: var(--green-leaf);
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+}
