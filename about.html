@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About OpenBooks</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(46, 125, 50, 0.1);
+            border: 1px solid var(--rose-accent);
+        }
+        
+        /* Header Section */
+        .mission-header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 2px solid var(--rose-light);
+            padding-bottom: 30px;
+        }
+
+        .mission-header h1 {
+            color: var(--green-forest);
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .mission-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        /* Uses/Utility Section */
+        .uses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .use-card {
+            background: #fdfdfd;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid var(--green-forest);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            transition: transform 0.2s;
+        }
+
+        .use-card:hover {
+            transform: translateY(-5px);
+            background: #fff;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .use-card h3 {
+            color: var(--green-forest);
+            margin-top: 0;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .use-card p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .back-btn-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 15px 50px;
+            background-color: var(--green-forest);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: var(--green-leaf);
+            box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="index.html" class="logo-link">
+                <img src="logo.png" alt="Logo" class="lib-logo">
+                <div class="logo-text">
+                    <span class="brand-name">OpenBooks</span>
+                    <span class="founder">Gateway to Infinite Stories</span>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <div class="about-container">
+        
+        <div class="mission-header">
+            <h1>Our Mission</h1>
+            <div class="mission-subtitle">Empowering minds through free and open access to knowledge.</div>
+        </div>
+        
+        <div class="uses-grid">
+            
+            <div class="use-card">
+                <h3>📚 Democratizing Access</h3>
+                <p>OpenBooks removes financial and geographical barriers, providing free, instant access to essential literature and educational resources for students and researchers globally.</p>
+            </div>
+
+            <div class="use-card">
+                <h3>🌏 Cultural Preservation</h3>
+                <p>By digitizing and hosting classic literature and diverse voices, the library preserves cultural heritage, ensuring that the wisdom of the past remains available to future generations.</p>
+            </div>
+
+            <div class="use-card">
+                <h3>🎓 Academic Support</h3>
+                <p>Designed as a reliable tool for scholars, the platform aggregates high-quality, public-domain texts essential for research in history, philosophy, sociology, and the arts.</p>
+            </div>
+
+            <div class="use-card">
+                <h3>🚀 Digital Literacy</h3>
+                <p>The intuitive interface serves as a gateway for new digital users, fostering improved digital literacy while encouraging the habit of deep reading in a modern, screen-based world.</p>
+            </div>
+
+        </div>
+
+        <div class="back-btn-container">
+            <a href="index.html" class="back-btn">Browse Collection</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 OpenBooks Library | Knowledge for All</p>
+    </footer>
+
+</body>
+</html>
